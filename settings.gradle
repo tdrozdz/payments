@@ -1,0 +1,5 @@
+rootProject.name = 'payments'
+
+include "verification"
+include "verification-api"
+include "transaction"

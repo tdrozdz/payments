@@ -1,0 +1,33 @@
+buildscript {
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:3.1.4")
+  }
+}
+
+plugins {
+  id 'java'
+}
+
+java {
+  sourceCompatibility = '17'
+}
+
+repositories {
+  mavenCentral()
+}
+
+task wrapper {
+
+}
+
+task prepareKotlinBuildScriptModel {
+
+}
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+  implementation 'org.springframework.boot:spring-boot-starter'
+  implementation 'net.devh:grpc-server-spring-boot-starter:2.14.0.RELEASE'
+  implementation project(':verification-api')
+}
+

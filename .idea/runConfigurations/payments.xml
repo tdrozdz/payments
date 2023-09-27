@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="payments" type="CompoundRunConfigurationType">
+    <toRun name="TransactionApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="VerificationApplication" type="SpringBootApplicationConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>

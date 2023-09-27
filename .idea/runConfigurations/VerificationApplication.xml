@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="VerificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="payments.verification.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.tdrozdz.payments.verification.VerificationApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

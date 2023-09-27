@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="TransactionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="payments.transaction.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.tdrozdz.payments.transaction.TransactionApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

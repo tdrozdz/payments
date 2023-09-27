@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+option java_package = "com.tdrozdz.payments.api";
+option java_multiple_files = true;
+option java_outer_classname = "VerificationApiProto";
+
+service Verification {
+  rpc isRegistrationFinished (IsRegistrationFinishedRequest) returns (IsRegistrationFinishedResponse) {
+  }
+
+  rpc isBlocked (IsBlockedRequest) returns (IsBlockedResponse) {
+  }
+
+  rpc isSanctioned (IsSanctionedRequest) returns (IsSanctionedResponse) {
+  }
+}
+
+message IsRegistrationFinishedRequest {
+  string clientId = 1;
+}
+
+message IsRegistrationFinishedResponse {
+  enum RegistrationStep {
+    UNDEFINED = 0;
+    APPROVAL_WAITING = 1;
+    FINISHED = 2;
+  }
+  RegistrationStep step = 2;
+}
+
+message IsBlockedRequest {
+  string clientId = 1;
+}
+
+message IsBlockedResponse {
+  bool blocked = 1;
+}
+
+message IsSanctionedRequest {
+  string clientId = 1;
+}
+
+message IsSanctionedResponse {
+  bool sanctioned = 1;
+}
