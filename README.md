@@ -9,7 +9,7 @@ Project expose 3 rest endpoint
 
 - GET accountDetail (localhost:8080/accountDetail?clientId) account information
 - POST withdraw (localhost:8080/withdraw) `AccountRequest` as payload
-- POST deposit (localhost:8080/accountDetail?clientId) `AccountRequest` as payload
+- POST deposit (localhost:8080/deposit) `AccountRequest` as payload
 
 Project has two separate services. The first one is the grpc server which allows to do the remote
 client checks:
